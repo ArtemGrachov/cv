@@ -1,7 +1,9 @@
-$primary: #374438;
-$secondary: #9AAB89;
-$tertiary: #939C97;
+$primary: #08120c;
+$secondary: lime;
+$tertiary: yellow;
 $content: black;
+$title: darkgreen;
+$header: lime;
 
 $space: 1.5rem;
 
@@ -17,9 +19,9 @@ html {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Verdana, sans-serif;
+  font-family: monospace;
   color: $content;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .container {
@@ -33,20 +35,18 @@ header {
   background: $primary;
   padding-top: $space;
   padding-bottom: $space;
-  color: #BDC6BF;
+  color: $header;
 
   h1 {
     color: $secondary;
-    text-align: center;
   }
 
   h2 {
-    text-align: center;
     color: $tertiary;
   }
 
   h3 {
-    color: #BDC6BF;
+    color: $header;
   }
 
   a {
@@ -101,11 +101,16 @@ ul {
   }
 }
 
-h3,
 h4,
 h5,
 h6 {
-  color: $primary;
+  color: $title;
+}
+
+h3 {
+  background: $primary;
+  color: $header;
+  display: inline-block;
 }
 
 a {
