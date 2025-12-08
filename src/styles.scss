@@ -126,8 +126,8 @@ a {
   flex: 1 1 0;
 }
 
-$section-even: #f3f3f3;
-$section-odd: white;
+$section-even: white;
+$section-odd: #f3f3f3;
 
 article {
   padding: $space 0;
@@ -148,3 +148,8 @@ section {
 .page-break {
   page-break-before: always;
 }
+
+.work-section {
+  padding-bottom: 0
+}
+
