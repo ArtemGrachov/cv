@@ -54,6 +54,10 @@ header {
   }
 }
 
+.nav {
+  margin-top: $space;
+}
+
 .horizontal-list {
   display: flex;
   justify-content: space-between;
@@ -83,6 +87,10 @@ p,
 ul {
   &:first-child {
     margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 

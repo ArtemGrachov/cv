@@ -5,14 +5,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel serve ./src/*.html --public-url / --dist-dir dist",
-    "build": "parcel build ./src/*.html --public-url / --dist-dir dist",
+    "build": "parcel build ./src/*.html --public-url / --dist-dir dist && cp ./doc/cv.pdf ./dist/cv.pdf",
     "export-pdf": "npm run build && wkhtmltopdf --margin-top 0mm --margin-bottom 0mm --margin-left 0mm --margin-right 0mm ./dist/index.html ./doc/cv.pdf"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.16.3",
-    "parcel": "^2.16.3"
+    "dotenv": "^17.2.3",
+    "parcel": "^2.16.3",
+    "posthtml-expressions": "^1.11.4"
   }
 }
-
